@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            width: 500px;
+            height: 100px;
+            margin: 10px auto;
+            border: 1px solid #000;
+        }
+
+        /* 语法：
+            linear-gradient(方向，起始颜色，终止颜色);
+            方向：to left   to right  to top   to bottom 　角度　30deg
+            起始颜色
+            终止颜色
+        */
+
+
+        /* 方向可以指定角度 */
+        div:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(135deg, yellow, green);
+        }
+
+       
+
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

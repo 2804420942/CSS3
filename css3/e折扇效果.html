@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>折扇效果</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 600px;
+			height: 230px;
+			border-bottom: 2px solid #000;
+			margin: 50px auto;
+			position: relative;
+		}
+		.box div{
+			width: 60px;
+			height: 200px;
+			position: absolute;
+			left: 240px;
+			box-shadow: 3px 3px 5px #333;
+			transform-origin: center bottom;
+			transition: all linear 0.5s;
+		}
+		.box div:nth-child(1){
+			background-color: red;opacity:1;
+		}
+		.box div:nth-child(2){
+			background-color: yellow;
+			opacity: 0;
+		}
+		.box div:nth-child(3){
+			background-color: green;
+			opacity: 0;
+		}
+		.box div:nth-child(4){
+			background-color: blue;
+			opacity: 0;
+		}
+		.box div:nth-child(5){
+			background-color: pink;
+			opacity: 0;
+		}
+		.box div:nth-child(6){
+			background-color: gray;
+			opacity: 0;
+		}
+		.box div:nth-child(7){
+			background-color: yellowgreen;
+			opacity: 0;
+		}
+		.box div:nth-child(8){
+			background-color: yellowgreen;
+			opacity: 0;
+		}
+		.box div:nth-child(9){
+			background-color: gray;
+			opacity: 0;
+		}
+		.box div:nth-child(10){
+			background-color: pink;
+			opacity: 0;
+		}
+		.box div:nth-child(11){
+			background-color: blue;
+			opacity: 0;
+		}
+		.box div:nth-child(12){
+			background-color: green;
+			opacity: 0;
+		}
+		.box div:nth-child(13){
+			background-color: yellow;
+			opacity: 0;
+		}
+		.box:hover div:nth-child(2){ transform: rotate(15deg); opacity:1;}
+		.box:hover div:nth-child(3){ transform: rotate(30deg); opacity:1;}
+		.box:hover div:nth-child(4){ transform: rotate(45deg); opacity:1;}
+		.box:hover div:nth-child(5){ transform: rotate(60deg); opacity:1;}
+		.box:hover div:nth-child(6){ transform: rotate(75deg); opacity:1;}
+		.box:hover div:nth-child(7){ transform: rotate(90deg); opacity:1;}
+		.box:hover div:nth-child(8){ transform: rotate(-90deg); opacity:1;}
+		.box:hover div:nth-child(9){ transform: rotate(-75deg); opacity:1;}
+		.box:hover div:nth-child(10){ transform: rotate(-60deg); opacity:1;}
+		.box:hover div:nth-child(11){ transform: rotate(-45deg); opacity:1;}
+		.box:hover div:nth-child(12){ transform: rotate(-30deg); opacity:1;}
+		.box:hover div:nth-child(13){ transform: rotate(-15deg); opacity:1;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>7</div>
+		<div>6</div>
+		<div>5</div>
+		<div>4</div>
+		<div>3</div>
+		<div>2</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="header-menu">
+				<div class="header-nav">
+					<div class="header-body">
+						<div class="header-lnav">
+							<ul>
+								<li><span></span><a href="#">主站</a></li>
+								<li><a href="#">音频</a></li>
+								<li><a href="#">游戏中心</a></li>
+								<li><a href="#">直播</a></li>
+								<li><a href="#">会员购</a></li>
+								<li><a href="#">漫画</a></li>
+								<li><a href="#">BW</a></li>
+								<li><a href="#">70年</a></li>
+								<li><span></span><a href="#">下载app</a></li>
+								<div class="erweima"></div>
+							</ul>
+						</div>
+						<div class="header-rnav">
+							<ul>
+								<li><span></span><a href="#">头像</a></li>
+								<li><a href="#">大会员</a></li>
+								<li><a href="#">消息</a></li>
+								<li><a href="#">动态</a></li>
+								<li><a href="#">稍后在看</a></li>
+								<li><a href="#">收藏</a></li>
+								<li><a href="#">历史</a></li>
+								
+							</ul>
+							
+						</div>
+						<div class="edit">
+								<span><a href="#">投稿</a></span>
+						</div>
+					</div>
+					<div class="header-logo"></div>
+					<div class="header-search">
+						<span>排行榜</span>
+						<input type="text" placeholder="哪吒活力，国风真的崛起了吗？"/>
+						<button type="submit"><span>搜索</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="nav"></div>
+			<div class="wrap"></div>
+			<div class="card"></div>
+		</div>
+		<div class="popularize">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var lis = document.querySelectorAll(".header-nav .header-lnav li");
+		var li = lis[lis.length-1];
+		var erweima = document.querySelector(".header-nav .header-lnav .erweima");
+		li.addEventListener("mouseover",function(){
+			erweima.style.opacity = 0.9;
+		});
+		li.addEventListener("mouseout",function(){
+			erweima.style.opacity = 0;
+		});
+	</script>
+</body>
+</html>

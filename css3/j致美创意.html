@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>致美创意</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<div class="container">
+		<!-- top -->
+		<div class="top"></div>
+		<!--nav -->
+		<div class="nav"></div>
+		<!-- banner -->
+		<div class="banner"></div>
+		<div class="banner"></div>
+		<div class="banner"></div>
+		<div class="banner"></div>
+		<div class="img">
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var img = document.getElementsByClassName("img")[0];
+		var width = 100;
+		img.addEventListener('mouseover',function(){
+			console.log(width);
+			var time = setInterval(function(){
+				width += 5;
+				if(width>200){
+					clearInterval(time);
+				}
+				else{img.style.width = width + "px";}
+			},20)
+		});
+		img.addEventListener('mouseout',function(a){
+			console.log(a);
+			var time = setInterval(function(){
+				
+				width -= 5;
+				if(width<100){
+					clearInterval(time);
+				}
+				else{img.style.width = width + "px";}
+			},20)
+		});
+/*		function a(){
+			var img = document.getElementsByClassName("img")[0];
+			var width = img.style.width;
+
+			console.log(width);
+			width = 100;
+			img.style.width = width+ "px";
+			setTimeout('a()',20);
+		}
+		function b(){
+			var img = document.getElementsByClassName("img")[0];
+			var width = img.style.width;
+			width -= 5;
+			img.style.width = width+ "px";
+			setTimeout('b()',20);
+		}*/
+	</script>
+
+</body>
+</html>

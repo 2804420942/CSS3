@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>垂直手风琴</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.listbox{
+			width: 500px;
+			height: 400px;
+			margin: 50px auto;
+		}
+		.listbox .list{
+			position: relative;
+		}
+		.listbox .list a{
+			display: block;
+			height: 35px;
+			background: linear-gradient(#cecece,#8f8f8f);
+			padding-left: 12px;
+			border-radius: 5px;
+			text-decoration: none;
+			color: #424242;
+			line-height: 35px;
+		}
+		.listbox .list span{
+			width: 0;
+			height: 0;
+			border-left: 5px solid rgb(255,255,255);
+			border-right: 5px solid rgba(255,255,255,0);
+			border-top: 5px solid rgba(255,255,255,0);
+			border-bottom: 5px solid rgba(255,255,255,0);
+			position: absolute;
+			top: 15px;
+			right: 15px;
+		}
+		.listbox .list p{
+			height: 0px;
+			overflow: auto;
+			margin: 5px 0px;
+			padding-left: 10px;
+			transition: height 0.5s; 
+		}
+		.listbox .list:target p{
+			height: 100px;
+		}
+		.listbox .list a:hover,.listbox .list:target a{
+			background: linear-gradient(#6bb2ff,#2288dd);
+			color: white;
+		}
+		.listbox .list:target span{
+			border-top: 5px solid white;
+			border-left: 5px solid transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="listbox">
+		<div class="list" id="list1">
+			<a href="#list1">BILIBILI</a>
+			<span></span>
+				<p>千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！</p>
+		</div>
+		<div class="list" id="list2">
+			<a href="#list2">BILIBILI2</a>
+			<span></span>
+				<p>千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！</p>
+		</div>
+		<div class="list" id="list3">
+			<a href="#list3">BILIBILI3</a>
+			<span></span>
+				<p>千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！千峰官网 这个课程是免费发放到网络上面给我们看的 希望每一个人都学有所成！也希望大家可以静心学习 忌浮躁 多动手敲！少年 愿你努力过后 成为自己梦里那样！也欢迎大家来我主页粉丝群一起学习交流！加油哦！</p>
+		</div>
+	</div>
+</body>
+</html>

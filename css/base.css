@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+.top{
+	height: 34px;
+	background: linear-gradient(#234,#222);
+}
+.nav{
+	width: 950px;
+	height: 108px;
+	background: #f00;
+	margin: 0 auto;
+}
+.banner{
+	width: 100%;
+	height: 250px;
+	background: yellow;
+}
+.img{
+	width: 100px;
+	height: 100px;
+	background: black;
+	border-radius: 15px;
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+}
+/* 背景 */
+#mainScreen{
+	width: 320px;
+	height: 568px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.bg{
+	width: 320px;
+	height: 568px;
+	position: absolute;
+	background-image: url("../img/background_12.png");
+}
+#bg2{
+	top: -568px;
+}
+/* 飞机 */
+#airplane{
+	width: 66px;
+	height: 80px;
+	background-image: url("../img/我的飞机.gif");
+	position: absolute;
+	bottom: 0;
+	left: 127px;
+}
+/* 子弹 */
+.bullet{
+	width: 6px;
+	height: 14px;
+	position: absolute;
+	background: url("../img/bullet2.png");
+}
+/* //敌人 */
+.enemy{
+	width: 46px;
+	height: 60px;
+	position: absolute;
+	background: url("../img/enemy3_fly_1原图.png");
+}
